@@ -3,6 +3,7 @@ import _ from 'lodash';
 const feedbackForm = document.querySelector('.feedback-form');
 const formData = {};
 const localInfo = JSON.parse(localStorage.getItem("feedback-form-state")) ?? {};
+
 feedbackForm.elements.email.value = localInfo.email || '';
 feedbackForm.elements.message.value = localInfo.message || '';
 

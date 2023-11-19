@@ -10,6 +10,7 @@ function playOn(date) {
     const { seconds } = date;
     localStorage.setItem("videoplayer-current-time", seconds);
 }
+
 const localVideoTime = localStorage.getItem("videoplayer-current-time");
 
 if (localVideoTime !== null) {
